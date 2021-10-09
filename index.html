@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+     <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <meta charset="utf-8">
+    <title>D3 Page Template</title>
+    <style>
+        body{ font-family: Helvetica, sans-serif;}
+    </style>
+    <script type="text/javascript" src="https://d3js.org/d3.v6.min.js"></script>
+    
+    <script defer src="script.js"></script>
+
+</head>
+
+
+<body> 
+    <div class="container">  
+        <div class = "row">
+            <h1>
+                Coffee House Chains
+            </h1>
+        </div>
+        <div class = "row">
+            <h6>
+                A ranking of selected leading global coffee chains worldwide
+            </h6>
+        </div>  
+        <div class = "row">
+            <div class = "column" >
+                <div class = "row">
+                    <label for="group-by">Group By</label>
+                
+                    <select id="group-by">
+                        <option value="stores">Stores worldwide</option>
+                        <option value="revenue">Revenue in billion U.S. dollars</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class = "column">
+                <button class="button-small button-outline" id="sort">
+                    Sort
+                </button>
+            </div>
+        </div>
+        <div class = "row">
+            <div class ="column">
+                <div class="chart">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+
+</html>
